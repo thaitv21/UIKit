@@ -1,3 +1,4 @@
 rootProject.name='UIKitSample'
 include ':app'
 include ':uikit'
+include ':uikitlibrary'
