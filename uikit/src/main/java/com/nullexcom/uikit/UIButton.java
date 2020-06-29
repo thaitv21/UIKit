@@ -28,7 +28,7 @@ public class UIButton extends androidx.appcompat.widget.AppCompatButton {
 
     private void obtainValues(Context context, AttributeSet attrs) {
         TypedArray ta = context.obtainStyledAttributes(attrs, R.styleable.UIButton);
-        radius = ta.getDimensionPixelOffset(R.styleable.UIButton_radius, 0);
+        radius = ta.getDimensionPixelOffset(R.styleable.UIButton_android_radius, 0);
         ta.recycle();
     }
 

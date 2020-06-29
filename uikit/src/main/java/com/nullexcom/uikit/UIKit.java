@@ -38,7 +38,7 @@ class UIKit {
             GradientDrawable gradientDrawable = new GradientDrawable();
             gradientDrawable.setColor(color);
             gradientDrawable.setCornerRadii(radii);
-            return newDrawable;
+            return gradientDrawable;
         } else if (drawable instanceof VectorDrawable) {
             VectorDrawable newDrawable = (VectorDrawable) drawable;
             Bitmap bitmap = getBitmapFromVectorDrawable(newDrawable);
