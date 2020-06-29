@@ -51,46 +51,5 @@ public class UIButton extends androidx.appcompat.widget.AppCompatButton {
         }
         float[] radii = new float[]{radius, radius, radius, radius, radius, radius, radius, radius};
         setBackground(UIKit.round(getContext(), background, radii));
-//        background.mutate();
-//        if (background instanceof GradientDrawable) {
-//            GradientDrawable drawable = (GradientDrawable) background;
-//            drawable.setCornerRadii(radii);
-//            setBackground(drawable);
-//        } else if (background instanceof ShapeDrawable) {
-//            ShapeDrawable drawable = (ShapeDrawable) background;
-//            Shape shape = drawable.getShape();
-//            if (shape instanceof RectShape) {
-//                RoundRectShape roundRectShape = new RoundRectShape(radii, null, null);
-//                drawable.setShape(roundRectShape);
-//                setBackground(drawable);
-//            }
-//        } else if (background instanceof ColorDrawable) {
-//            ColorDrawable drawable = (ColorDrawable) background;
-//            int color = drawable.getColor();
-//            GradientDrawable gradientDrawable = new GradientDrawable();
-//            gradientDrawable.setColor(color);
-//            gradientDrawable.setCornerRadii(radii);
-//            setBackground(gradientDrawable);
-//        } else if (background instanceof VectorDrawable) {
-//            VectorDrawable drawable = (VectorDrawable) background;
-//            Bitmap bitmap = getBitmapFromVectorDrawable(drawable);
-//            RoundedBitmapDrawable roundedBitmapDrawable = RoundedBitmapDrawableFactory.create(getResources(), bitmap);
-//            roundedBitmapDrawable.setCornerRadius(radius);
-//            setBackground(roundedBitmapDrawable);
-//        } else if (background instanceof BitmapDrawable) {
-//            BitmapDrawable drawable = (BitmapDrawable) background;
-//            Bitmap bitmap = drawable.getBitmap();
-//            RoundedBitmapDrawable roundedBitmapDrawable = RoundedBitmapDrawableFactory.create(getResources(), bitmap);
-//            roundedBitmapDrawable.setCornerRadius(radius);
-//            setBackground(roundedBitmapDrawable);
-//        }
-    }
-
-    public static Bitmap getBitmapFromVectorDrawable(VectorDrawable drawable) {
-        Bitmap bitmap = Bitmap.createBitmap(drawable.getIntrinsicWidth(), drawable.getIntrinsicHeight(), Bitmap.Config.ARGB_8888);
-        Canvas canvas = new Canvas(bitmap);
-        drawable.setBounds(0, 0, canvas.getWidth(), canvas.getHeight());
-        drawable.draw(canvas);
-        return bitmap;
     }
 }
