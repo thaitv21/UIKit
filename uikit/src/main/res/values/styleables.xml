@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <declare-styleable name="UIButton">
-        <attr name="android:radius" format="dimension"/>
+        <attr name="android:radius" />
+    </declare-styleable>
+    <declare-styleable name="UIFrameLayout">
+        <attr name="android:radius" />
     </declare-styleable>
 </resources>
